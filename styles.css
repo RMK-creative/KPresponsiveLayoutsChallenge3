@@ -1,0 +1,64 @@
+/*suggested by KP to add this on every css file*/
+*, *::before, *::after {
+    box-sizing: border-box
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* On solution KP used padding only top-bottom 100px*/
+  .container {
+    background-color: #23424A;
+    width: 100%;
+    padding: 100px 0;
+  }
+  
+  /* On solution KP talked about not having padding on this part due to issues with smaller screens. Best to put e.g 80% so it will scale accordingly. He also set margin: 0 auto; and also max-width: 750px - point here was to use actual px */
+  .main-text {
+    width: 80%;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.8rem;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 0.8rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+  
+  /* On solution KP uses <a href="#"  class="btn"> as it would normally be an active button with a link to something! # is used until link info added.
+  also added display: inline-block, text-transform: uppercase, text-decoration: none,
+  ADDITIONALLY he spoke about using em on the button so that the spacing is relative to the font-size */
+  .btn {
+    font-size: 0.9rem;
+    background-color: #38CFD9;
+    font-weight: 900;
+    color: #23424A;
+    /*width: 13em;
+    height: 3rem; */ /*NOT USED IN SOLUTION*/
+    padding: 0.75em 2em; /*amended as per solution*/
+    border-radius: 100px;
+    margin-top: 1rem;
+    letter-spacing: 0.03rem;
+    border-style: none;
+    /*from solution*/ 
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  /*solution also added the below*/
+  
+  .btn:hover,
+  .btn:focus {
+    opacity: 0.75;
+  }
